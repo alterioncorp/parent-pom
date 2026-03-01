@@ -17,6 +17,16 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+          server-id: github
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_TOKEN
 
       - name: Build and verify
         run: mvn clean verify
+
+      - name: Publish to GitHub Packages
+        if: github.ref == 'refs/heads/develop'
+        run: mvn deploy -DskipTests
+        env:
+          MAVEN_USERNAME: ${{ github.actor }}
+          MAVEN_TOKEN: ${{ secrets.GITHUB_TOKEN }}

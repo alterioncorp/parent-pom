@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 
 	<name>parent-pom</name>
-	<url>https://alexlitovsky1@bitbucket.org/alexlitovsky1/parent-pom.git</url>
+	<url>https://github.com/alexlitovsky/parent-pom</url>
 	<description>Parent POM for com.alterioncorp projects.</description>
 
 	<properties>
@@ -33,38 +33,19 @@
 	</developers>
 
 	<scm>
-		<url>https://alexlitovsky1@bitbucket.org/alexlitovsky1/parent-pom.git</url>
+		<url>https://github.com/alexlitovsky/parent-pom</url>
+		<connection>scm:git:git://github.com/alexlitovsky/parent-pom.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/alexlitovsky/parent-pom.git</developerConnection>
 	</scm>
 
-
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/alexlitovsky/parent-pom</url>
 		</repository>
 	</distributionManagement>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<extensions>true</extensions>
-				<executions>
-					<execution>
-						<id>deploy-to-sonatype</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -106,17 +87,6 @@
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
 					<version>0.8.14</version>
-				</plugin>
-				<plugin>
-					<groupId>org.sonatype.plugins</groupId>
-					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.6.14</version>
-					<extensions>true</extensions>
-					<configuration>
-						<serverId>ossrh</serverId>
-						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-						<autoReleaseAfterClose>true</autoReleaseAfterClose>
-					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
