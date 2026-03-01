@@ -10,7 +10,7 @@
 
 	<name>parent-pom</name>
 	<url>https://github.com/alexlitovsky/parent-pom</url>
-	<description>Parent POM for com.alterioncorp projects.</description>
+	<description>Parent POM for com.alexlitovsky projects.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
