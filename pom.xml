@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.alexlitovsky</groupId>
+	<groupId>io.github.alterioncorp</groupId>
 	<artifactId>parent-pom</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>parent-pom</name>
 	<url>https://github.com/alterioncorp/parent-pom</url>
-	<description>Parent POM for io.github.alexlitovsky projects.</description>
+	<description>Parent POM for io.github.alterioncorp projects.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
