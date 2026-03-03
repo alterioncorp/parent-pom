@@ -11,4 +11,5 @@ jobs:
     uses: alterioncorp/.github/.github/workflows/reusable-build.yml@main
     with:
       mvn-goal: clean deploy -U -Ppublish
+      setup-gpg: true
     secrets: inherit
