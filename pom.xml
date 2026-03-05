@@ -24,6 +24,11 @@
 		</license>
 	</licenses>
 
+	<organization>
+		<name>Alterion Corp.</name>
+		<url>https://github.com/alterioncorp</url>
+	</organization>
+  
 	<developers>
 		<developer>
 			<name>Alex Litovsky</name>
