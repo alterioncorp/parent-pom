@@ -31,9 +31,8 @@
   
 	<developers>
 		<developer>
+			<id>alexlitovsky</id>
 			<name>Alex Litovsky</name>
-			<email>alexlitovsky+github@gmail.com</email>
-			<organization>Alex Litovsky</organization>
 		</developer>
 	</developers>
 
